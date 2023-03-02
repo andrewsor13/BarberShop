@@ -10,23 +10,25 @@
   </head>
   <body>
     <!--PageHeader-->
-    <header class="page-header">
-      <img src="images/Logo.png" alt="Logo Barbershop app" />
-      <nav class="header-navigation">
-        <ul class="navigation-list unstyled-list">
-          <li><a class="link" href="about.html">About</a></li>
-          <li><a class="link" href="services_and_price.html">Services and price</a></li>
-          <li><a class="link" class="link" href="barbers.html">Barbers</a></li>
-          <li><a class="link" href="contact.html">Contact</a></li>
-        </ul>
-        <ul class="right-navigation-list unstyled-list">
-          <li><a class="link" href="tel: +38 044 111 11 11">+38 044 111 11 11</a></li>
-          <li class="link">
-            <button class="online-booking-button">ONLINE-BOOKING</button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="header-container">
+      <header class="page-header">
+        <img src="images/Logo.png" alt="Logo Barbershop app" />
+        <nav class="header-navigation">
+          <ul class="navigation-list unstyled-list">
+            <li class="nav-list-item"><a class="link" href="about.html">About</a></li>
+            <li class="nav-list-item"><a class="link" href="services_and_price.html">Services and price</a></li>
+            <li class="nav-list-item"><a class="link" class="link" href="barbers.html">Barbers</a></li>
+            <li class="nav-list-item"><a class="link" href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="right-navigation-list unstyled-list">
+            <li class="contact-list-item"><a class="link" href="tel: +38 044 111 11 11">+38 044 111 11 11</a></li>
+            <li class="contact-list-item" class="link">
+              <button class="online-booking-button">ONLINE-BOOKING</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main>
       <!--HeroSection-->
       <section class="hero-section">
@@ -36,37 +38,41 @@
       </section>
       <!--AboutSection-->
       <section class="page-section about">
-        <h3 class="sub-title-section">About</h3>
-        <div>
+        <div class="images-container">
           <img width="270" height="445" src="/images/Haircut1.png" />
           <img width="270" height="445" src="/images/Haircut2.png" />
         </div>
-        <div>
+        <div class="details-container">
+          <h3 class="sub-title-section">About</h3>
           <h2 class="title-section">Best Barbershop in your city</h2>
           <p class="text-section-first-text">If you want to add more confidence to your image, you should definitely visit us.</p>
           <p class="text-section">
             We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never
             be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!
           </p>
-          <button class="online-booking-button">ONLINE-BOOKING</button>
+          <div class="button-container">
+            <button class="online-booking-button">ONLINE-BOOKING</button>
+          </div>
         </div>
       </section>
       <!--ServicesSection-->
       <section class="page-section services">
         <h3 class="sub-title-section">Spend your time with the best masters</h3>
         <h2 class="title-section">Services and prices</h2>
-        <ul class="unstyled-list">
-          <li>Men’s haircut<span>from 300 uah.</span></li>
-          <li>Beard trim<span>from 300 uah.</span></li>
-          <li>Mustache trim<span>from 200 uah.</span></li>
-          <li>Straight razor shave<span>from 200 uah.</span></li>
-        </ul>
-        <ul class="unstyled-list">
-          <li>Trainee’s haircut<span>from 50 uah.</span></li>
-          <li>Haircut under the nozzle<span>from 200 uah.</span></li>
-          <li>Children’s haircut (0-12 y.o.)<span>from 300 uah.</span></li>
-          <li>Camouflage of gray hair<span>from 200 uah.</span></li>
-        </ul>
+        <div class="services-lists">
+          <ul class="unstyled-list">
+            <li>Men’s haircut<span>from 300 uah.</span></li>
+            <li>Beard trim<span>from 300 uah.</span></li>
+            <li>Mustache trim<span>from 200 uah.</span></li>
+            <li>Straight razor shave<span>from 200 uah.</span></li>
+          </ul>
+          <ul class="unstyled-list">
+            <li>Trainee’s haircut<span>from 50 uah.</span></li>
+            <li>Haircut under the nozzle<span>from 200 uah.</span></li>
+            <li>Children’s haircut (0-12 y.o.)<span>from 300 uah.</span></li>
+            <li>Camouflage of gray hair<span>from 200 uah.</span></li>
+          </ul>
+        </div>
         <button class="online-booking-button">ONLINE-BOOKING</button>
       </section>
       <!--PortofolioSection-->
@@ -96,24 +102,120 @@
         </div>
       </section>
       <!--OurBarbersSection-->
-      <section class="page-section OurBarbers">
+      <section class="page-section our-barbers">
         <h3 class="sub-title-section">For true enjoyers of the atmosphere</h3>
         <h2 class="title-section">Our barbers</h2>
-        <ul class="unstyled-list our-barbers">
+        <ul class="unstyled-list our-barbers-list">
           <li>
             <img class="image" src="/images/img1.png" alt="John Smith" />
-            <h3 class="title">John Smith</h3>
-            <p class="ocupation">Extreme Barber</p>
+            <div class="barber-details">
+              <h3 class="title">John Smith</h3>
+              <p class="ocupation">Extreme Barber</p>
+            </div>
+            <div class="social-media-icons">
+              <ul class="unstyled-list">
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px"><use href="./images/icons.svg#icon-instagram"></use></svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <img class="image" src="/images/img2.png" alt="Michele Doe" />
-            <h3 class="title">Michele Doe</h3>
-            <p class="ocupation">Extreme Barber</p>
+            <div class="barber-details">
+              <h3 class="title">Michele Doe</h3>
+              <p class="ocupation">Extreme Barber</p>
+            </div>
+            <div class="social-media-icons">
+              <ul class="unstyled-list">
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px"><use href="./images/icons.svg#icon-instagram"></use></svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <img class="image" src="/images/img3.png" alt="Alan Black" />
-            <h3 class="title">Alan Black</h3>
-            <p class="ocupation">Extreme Barber</p>
+            <div class="barber-details">
+              <h3 class="title">Alan Black</h3>
+              <p class="ocupation">Extreme Barber</p>
+            </div>
+            <div class="social-media-icons">
+              <ul class="unstyled-list">
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px"><use href="./images/icons.svg#icon-instagram"></use></svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </section>
