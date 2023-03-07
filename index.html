@@ -245,15 +245,17 @@
         </ul>
       </section>
       <!--OnlineBookingSection-->
-      <section class="page-section online-bookin">
-        <div>
+      <section class="page-section online-booking">
+        <div class="left-side">
           <h3 class="sub-title-section">Online-booking</h3>
-          <input placeholder="Name*" />
-          <input placeholder="Phone*" />
-          <input placeholder="Message" />
-          <button>SEND</button>
+          <form name="online-booking" class="online-booking-form">
+            <input type="text" placeholder="NAME*" name="name" />
+            <input type="tel" placeholder="PHONE*" name="phone" />
+            <textarea placeholder="MESSAGE" name="message"></textarea>
+            <button type="submit" class="send-button-form">SEND</button>
+          </form>
         </div>
-        <div>
+        <div class="right-side">
           <h3>Contacts</h3>
           <address>
             <ul class="unstyled-list">

@@ -61,7 +61,7 @@ html {
 .is-hidden {
   visibility: hidden;
   opacity: 0;
-  transform: scale(0.1);
+  transform: scale(0, 1);
 }
 
 .inner-div {
@@ -399,4 +399,57 @@ html {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.online-booking {
+  display: flex;
+  background: #191C26;
+  padding: 100px;
+  flex-direction: row;
+}
+
+.online-booking .left-side,
+.online-booking .right-side {
+  flex: 1 0 50%;
+}
+
+.online-booking .left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.online-booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.online-booking-form input {
+  flex: 1 0 40%;
+}
+
+.online-booking-form input,
+.online-booking-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(157, 164, 189, 0.4);
+  outline: none;
+}
+
+.online-booking-form input:focus,
+.online-booking-form textarea:focus {
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.online-booking-form input:focus::placeholder,
+.online-booking-form textarea:focus::placeholder {
+  color: white;
+}
+
+.online-booking-form textarea {
+  flex: 1 0 100%;
+  resize: none;
 }
