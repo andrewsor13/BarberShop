@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <div class="modal is-hidden" data-modal>
+      <div class="inner-div">
+        <button class="close-button" data-modal-close>Close</button>
+        <p>text text</p>
+      </div>
+    </div>
     <!--PageHeader-->
     <div class="header-container">
       <div class="logo-holder">
@@ -29,7 +35,7 @@
           <ul class="right-navigation-list unstyled-list">
             <li class="contact-list-item"><a class="link" href="tel: +38 044 111 11 11">+38 044 111 11 11</a></li>
             <li class="contact-list-item" class="link">
-              <button class="online-booking-button">ONLINE-BOOKING</button>
+              <button data-modal-open class="online-booking-button">ONLINE-BOOKING</button>
             </li>
           </ul>
         </nav>
@@ -269,5 +275,6 @@
         <li><a class="link" href="#">Youtube</a></li>
       </ul>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
